@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Harshita Sharma Portfolio Design System */
+
+@layer base {
+  :root {
+    /* Pure black background with purple neon accents */
+    --background: 0 0% 0%;
+    --foreground: 0 0% 100%;
+
+    --card: 0 0% 5%;
+    --card-foreground: 0 0% 100%;
+
+    --popover: 0 0% 5%;
+    --popover-foreground: 0 0% 100%;
+
+    /* Neon purple primary color */
+    --primary: 265 77% 77%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Darker purple for secondary */
+    --secondary: 265 50% 20%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 70%;
+
+    /* Bright purple accent */
+    --accent: 265 77% 77%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 265 50% 30%;
+    --input: 0 0% 10%;
+    --ring: 265 77% 77%;
+
+    --radius: 1rem;
+
+    /* Custom portfolio colors */
+    --purple-glow: 265 77% 77%;
+    --purple-dark: 265 50% 20%;
+    --card-bg: 0 0% 5%;
+    
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --glow-shadow: 0 0 20px hsl(var(--purple-glow) / 0.3);
+    --card-shadow: 0 8px 32px 0 rgba(183, 141, 255, 0.1);
+  }
+
+  .dark {
+    --background: 0 0% 0%;
+    --foreground: 0 0% 100%;
+    --card: 0 0% 5%;
+    --card-foreground: 0 0% 100%;
+    --popover: 0 0% 5%;
+    --popover-foreground: 0 0% 100%;
+    --primary: 265 77% 77%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 265 50% 20%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 70%;
+    --accent: 265 77% 77%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 265 50% 30%;
+    --input: 0 0% 10%;
+    --ring: 265 77% 77%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+  }
+}
+
+@layer utilities {
+  .purple-glow {
+    box-shadow: 0 0 20px hsl(var(--purple-glow) / 0.3);
+  }
+
+  .purple-glow-strong {
+    box-shadow: 0 0 30px hsl(var(--purple-glow) / 0.5);
+  }
+
+  .dotted-border {
+    border: 2px dashed hsl(var(--primary));
+  }
+
+  .gradient-purple {
+    background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--purple-dark)) 100%);
+  }
+
+  .text-gradient {
+    background: linear-gradient(135deg, hsl(var(--primary)) 0%, #fff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
