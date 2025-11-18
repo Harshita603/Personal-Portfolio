@@ -26,7 +26,7 @@ const projects: Project[] = [
     title: 'Portfolio Website',
     tech: ['React', 'Redux', 'CSS', 'Firebase'],
     image: portfolio,
-    live: 'https://your-portfolio-demo.com',
+    live: 'https://harshita-portfolio-wine.vercel.app/',
   },
   {
     title: 'Social Media Dashboard',
